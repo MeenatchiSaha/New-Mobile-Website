@@ -1,0 +1,160 @@
+<html>
+<head>
+	<title>Register</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+	.container{
+		margin-top: 35px;
+	}
+	body{
+		font-family: all;
+		background: rgb(17, 9, 170);
+background: linear-gradient(90deg, rgb(10, 4, 119) 0%, rgba(9,9,121,1) 9%, rgba(8,18,127,1) 27%, rgba(7,31,136,1) 42%, rgba(0,212,255,1) 84%);
+	}
+h1{
+	text-align: center;
+	color: #ffffff;
+}
+#form{
+	background-color: rgba(114, 228, 165, 0.6);
+}
+.btn-info{
+	transition: 0.5s ease-in-out;
+	background: rgb(9, 4, 107);
+	height: 40px;
+	font-size: 18px;
+	width: 83%;
+}
+
+label{
+	color: #ffffff;
+}
+input:focus , input:hover{
+	border-color: none;
+	outline: none;
+	box-shadow: none;
+}
+
+</style>
+<body>
+
+	<div class="container">
+		<div class="col-md-3"></div>
+
+		<div class="col-md-6" id="form">
+			<form id="myForm">
+				<h1>Registration Form</h1>
+				<br><br>
+                  
+                  <div class="row">
+                  	<div class="col-md-1"></div>
+        <div class="col-md-5">
+        	<input type="text" placeholder="First Name" class="form-control" required="" id="myName"><br>
+        </div>
+        <div class="col-md-5">
+        	<input type="text" placeholder="Last Name" class="form-control" required="">
+        </div>
+
+                  	<div class="col-md-1"></div>
+                  </div>
+<br>
+<div class="row">
+                  	<div class="col-md-1"></div>
+        <div class="col-md-10">
+        	<input type="Email" placeholder="Enter Email" class="form-control" required=""><br>
+        	        	<input type="Password" placeholder="Password" class="form-control" required="">
+       
+
+        </div>
+       
+                  	<div class="col-md-1"></div>
+                  </div>
+<br><br>
+<div class="row">
+<div class="col-md-1"></div>
+
+
+<div class="col-md-5">
+  <input type="date" class="form-control">	
+</div>
+
+<div class="col-md-2">
+	<label>Male</label>&nbsp;&nbsp;
+	<input type="radio" name="gender">
+</div>
+<div class="col-md-3">
+	<label>Female</label>&nbsp;&nbsp;
+	<input type="radio" name="gender">
+</div>
+
+
+<div class="col-md-1"></div>
+</div>
+
+<br><br>
+
+
+<div class="row">
+	<div class="col-md-1"></div>
+
+		<div class="col-md-10">
+			<input type="number" placeholder="91XXXXXXXXXX" min="0"  class="form-control" >
+		</div>
+
+			<div class="col-md-1"></div>
+</div>
+<br>
+
+<div class="row">
+			<div class="col-md-1"></div>
+
+
+					<div class="col-md-10">
+						<textarea rows="3" placeholder="Short Bio" class="form-control" required=""></textarea>
+					</div>
+
+							<div class="col-md-1"></div>
+
+</div>
+
+<br>
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-5">
+		<button type="submit" class="btn btn-info form-control" >Register</button>
+	</div>
+	
+	<div class="col-md-5">
+		<button type="Submit" class="btn btn-info form-control" onclick="window.location.href='sign.html'">Sign In</button>
+	</div>
+
+</div>
+
+
+<br><br>
+
+			</form>
+			
+		</div>
+
+				<div class="col-md-3"></div>
+		
+	</div>
+
+	<script>
+		var theForm = document.getElementById('myForm');
+	theForm.addEventListener('submit', function(event) {
+	  event.preventDefault();
+	
+	  var myName = document.getElementById("myName").value;
+	  window.alert("Hai,"+myName+"! "+"Go To SingIn");
+	 
+	
+	});
+		</script>
+
+</body>
+</html>

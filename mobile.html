@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+
+    <title>Mobile</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+   
+    <button
+    type="button"
+    class="btn btn-danger btn-floating btn-lg"
+    id="btn-back-to-top"
+    >
+<i class="fas fa-arrow-up"></i>
+</button>
+
+    
+    <!--Navbar-->
+   <nav class="navbar navbar-expand-lg navbar-light " id="navbar" >
+      <a class="navbar-brand" href="#"><img src="images/apple-iphone-xs.jpg" id="logo"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+      
+            
+            <li class="nav-item">
+              <a class="nav-link" href="mobile.html">All Mobiles</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Support
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="order.html"  target="_blank" >Order</a>
+                                  <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" onclick="openPopup()">Contact Us</a>
+              </div>
+         
+        </ul>
+        
+          <button class="btn btn-warning my-2 my-sm-0" type="submit" onclick="window.location.href='sign.html'" >SIGN IN</button>
+      
+      </div>
+    </nav>
+  <!--/.Navbar-->
+  
+      
+    
+   <br><br>
+   <h1 style="text-align: center;"><b>All Mobile Details</b></h1>
+
+      <div class="container">
+        <input class="form-control mb-4" id="myInput" type="text"
+          placeholder="Search your Mobile name here" onkeyup="searchFun()" >
+      
+        <table class="table table-bordered table-striped" id="mytable" >
+          <thead>
+            <tr style="text-align:center">
+              <th style="font-weight: bold;">Mobile Name</th>
+              <th style="font-weight: bold;">Features</th>
+              <th style="font-weight: bold;">Image</th>
+              <th style="font-weight: bold;">Price</th>
+              <th style="font-weight: bold;">Order</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>Samsung Galaxy S21</td>
+              <td><b>Type</b> - Dynamic AMOLED 2X, 120Hz,<br> 
+                Size - 6.4 inches, 98.9 cm2 (~85.3% screen-to-body ratio)<br>
+                Resolution -	1080 x 2400 pixels, 20:9 ratio (~411 ppi density)<br>
+                Protection -	Corning Gorilla Glass Victus<br>
+                     Always - on display<br>
+                PLATFORM -	OS	Android 12, One UI 4<br>
+                Chipset -	Qualcomm SM8350 Snapdragon 888 5G (5 nm) - Version 1<br>
+                Exynos 2100 (5 nm) - Version 2<br>
+                </td>
+              <td><img class="card-img-top" src="images/samsung-galaxy-s21.jpg" ></td>
+              <td>Rs.30,000</td>
+              <td><a href="order.html" class="btn btn-primary " target="_blank" >Order</a></td>
+            </tr>
+            <tr> 
+                <td>Samsung Galaxy A13</td>
+                <td><b>Type</b> - Dynamic AMOLED 2X, 120Hz,<br> 
+                
+                  Protection -	Corning Gorilla Glass Victus<br>
+                       Always - on display<br>
+                  PLATFORM -	OS	Android 12, One UI 4<br>
+                  Chipset -	Qualcomm SM8350 Snapdragon 888 5G (5 nm) - Version 1<br>
+                  Exynos 2100 (5 nm) - Version 2<br>
+                  </td>
+                <td><img class="card-img-top" src="images/samsung-galaxy-a13.jpg" ></td>
+                <td>Rs.27,000</td>
+                <td> <a href="order.html" class="btn btn-primary " target="_blank" >Order </a></td>
+              </tr>
+              <tr>
+                <td>Samsung Galaxy Z</td>
+                <td><b>Type</b> - Dynamic AMOLED 2X, 120Hz,<br> 
+                 
+                  Protection -	Corning Gorilla Glass Victus<br>
+                       Always - on display<br>
+                  PLATFORM -	OS	Android 12, One UI 4<br>
+                  Chipset -	Qualcomm SM8350 Snapdragon 888 5G (5 nm) - Version 1<br>
+                  Exynos 2100 (5 nm) - Version 2<br>
+                  </td>
+                <td><img class="card-img-top" src="images/samsung-galaxy-z.jpg" ></td>
+                <td>Rs.26,000</td>
+                <td><a href="order.html" class="btn btn-primary" target="_blank"  >Order</a></td>
+              </tr>
+              <tr>
+                <td>Lenovo Legion 2</td>
+                <td><b>Type</b> - Dynamic AMOLED 2X, 120Hz,<br> 
+                 
+                       Always - on display<br>
+                  PLATFORM -	OS	Android 12, One UI 4<br>
+                  Chipset -	Qualcomm SM8350 Snapdragon 888 5G (5 nm) - Version 1<br>
+                  Exynos 2100 (5 nm) - Version 2<br>
+                  </td>
+                <td><img class="card-img-top" src="images/lenovo-legion-2.jpg" ></td>
+                <td>Rs.30,000</td>
+                <td><a href="" class="btn btn-primary" target="_blank" > Order</a></td>
+              </tr>
+              <tr>
+                <td>Lenovo K13</td>
+                <td><b>Type</b> - Dynamic AMOLED 2X, 120Hz,<br> 
+                 
+                  Protection -	Corning Gorilla Glass Victus<br>
+                       Always - on display<br>
+                  PLATFORM -	OS	Android 12, One UI 4<br>
+                  Chipset -	Qualcomm SM8350 Snapdragon 888 5G (5 nm) - Version 1<br>
+                  Exynos 2100 (5 nm) - Version 2<br>
+                  </td>
+                <td><img class="card-img-top" src="images/lenovo-k13-pro.jpg" ></td>
+                <td>Rs.27,000</td>
+                <td><a href="order.html" class="btn btn-primary" target="_blank"  > Order</a></td>
+              </tr>
+              <tr>
+                <td>Lenovo A8</td>
+                <td><b>Type</b> - Dynamic AMOLED 2X, 120Hz,<br> 
+               
+                       Always - on display<br>
+                  PLATFORM -	OS	Android 12, One UI 4<br>
+                  Chipset -	Qualcomm SM8350 Snapdragon 888 5G (5 nm) - Version 1<br>
+                  Exynos 2100 (5 nm) - Version 2<br>
+                  </td>
+                <td><img class="card-img-top" src="images/lenovo-a8.jpg" ></td>
+                <td>Rs.26,000</td>
+                <td><a href="order.html"class="btn btn-primary"  target="_blank" > Order</a></td>
+              </tr>
+              <tr>
+                <td>Apple iphone xs</td>
+                <td><b>Type</b> - Dynamic AMOLED 2X, 120Hz,<br> 
+               
+                       Always - on display<br>
+                  PLATFORM -	OS	Android 12, One UI 4<br>
+                  Chipset -	Qualcomm SM8350 Snapdragon 888 5G (5 nm) - Version 1<br>
+                  Exynos 2100 (5 nm) - Version 2<br>
+                  </td>
+                <td><img class="card-img-top" src="images/apple-iphone-xs.jpg" ></td>
+                <td>Rs.50,000</td>
+                <td><a href="order.html" class="btn btn-primary" target="_blank" > Order</a></td>
+              </tr>
+              <tr>
+                <td>Apple iphone 13</td>
+                <td><b>Type</b> - Dynamic AMOLED 2X, 120Hz,<br> 
+                  
+                  Protection -	Corning Gorilla Glass Victus<br>
+                       Always - on display<br>
+                  PLATFORM -	OS	Android 12, One UI 4<br>
+                  Chipset -	Qualcomm SM8350 Snapdragon 888 5G (5 nm) - Version 1<br>
+                  Exynos 2100 (5 nm) - Version 2<br>
+                  </td>
+                <td><img class="card-img-top" src="images/apple-iphone-13-pro.jpg" ></td>
+                <td>Rs.48,000</td>
+                <td><a href="order.html" class="btn btn-primary" target="_blank"  >Order</a></td>
+              </tr>
+              <tr>
+                <td>Apple iphone 12</td>
+                <td><b>Type</b> - Dynamic AMOLED 2X, 120Hz,<br> 
+              
+                  Protection -	Corning Gorilla Glass Victus<br>
+                       Always - on display<br>
+                  PLATFORM -	OS	Android 12, One UI 4<br>
+                  Chipset -	Qualcomm SM8350 Snapdragon 888 5G (5 nm) - Version 1<br>
+                  Exynos 2100 (5 nm) - Version 2<br>
+                  </td>
+                <td><img class="card-img-top" src="images/apple-iphone-12-pro-max-.jpg" ></td>
+                <td>Rs.48,000</td>
+                <td><a href="order.html" class="btn btn-primary" target="_blank"  >Order</a></td>
+              </tr>
+             
+           
+          </tbody>
+        </table>
+        <br>
+        <br>
+        <h2 class="text-center my-5">Our New Feature Courses</h2>
+       <div class="embed-responsive embed-responsive-16by9">
+      <iframe src = "course.html" class="embed-responsive-item" scrolling="yes" style="overflow:hidden;"  width="1000" height="700" style="margin-left:35px;">
+       Sorry your browser does not support inline frames.
+    </iframe>
+      </div>
+      </div>
+<br>
+<br>
+      <footer class="footer">
+        <ul>
+          <li style="padding-left:10em"><a href="index.html">Home</a></li>
+          <li><a href="mobile.html">Mobiles</a></li>
+          <li><a href="order.html" target="_blank">Order</a></li>
+          <li><a href="sign.html">Sign In</a></li>
+          <li><a href="tcp.html">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+  
+        </ul>
+  
+  
+        <span class="footer-title">For more Details <a href="#" onclick="openPopup()" >Contact Us</a></span>
+        <p>Copyright @2022. All Rights Reserved.</p>
+      </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- JQuery -->
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="script.js" charset="utf-8"></script>
+     </body>
+
+</html>

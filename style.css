@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+#logo {
+  width: 30px;
+  height: 30px;
+}
+
+#navbar {
+  font-weight: 700 !important;
+  font-size: medium;
+  position: sticky;
+  z-index: 100;
+  padding: 0.2rem, 2rem;
+  box-shadow: 2px 2px green;
+}
+#navbarSupportedContent a {
+  color: rgb(25, 8, 185);
+  font-size: 1.5rem;
+}
+
+
+
+#home {
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(76, 76, 78, 0.3), rgba(47, 47, 48, 0.4)),
+    url(images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#home h1 {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-style: oblique;
+  font-size: 50px;
+  text-shadow: 1px 1px 0px turquoise, 1px 2px 0px turquoise,
+    1px 3px 0px turquoise, 1px 4px 0px turquoise;
+}
+#about {
+  background: linear-gradient(to left, pink, rgb(235, 49, 64) 70%);
+}
+#restimg {
+  width: 90%;
+  height: 90%;
+
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+#mobiles{
+  background: white;
+}
+#mobiles h1{
+  font-size:60px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+#mobiles img{
+  width: 300px;
+  height: 300px;
+}
+
+.footer{
+  background: #dbdbe6;
+  color: rgb(76, 14, 247);
+  text-align: center;
+  padding: 2em;
+}
+.footer .footer-title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer p{
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.footer p a{
+  color: #3a6cf4;
+  font-weight: 600;
+  text-decoration: none;
+ 
+}
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+.footer li {
+  float: left;
+}
+.footer li a{
+  padding: 16px;
+}
+.btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px blue;
+}
+
+/*back to top button*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+#btn-back-to-top:hover{
+  transform: scale(1.05) 
+  translateY(-5px);
+}

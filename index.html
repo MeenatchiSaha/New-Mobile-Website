@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .card{
+  width: 350px;
+  height: 500px;
+  background: whitesmoke;
+  border: none;
+  box-shadow: 15px 20px 20px rgba(0,0,0,0.3);
+              inset: 4px 4px 10px white ;
+border-radius: 20px;
+justify-content: center;
+align-items: center;
+margin: 25px 25px;
+
+
+}
+
+.card:hover{
+  box-shadow: inset 15px 20px 20px rgba(0,0,0,0.4);
+             inset:     4px 4px 10px white ;
+             width: 351px;
+  height: 501px;
+}
+
+</style>
+
+  </head>
+  
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" >
+
+    <button
+    type="button"
+    class="btn btn-danger btn-floating btn-lg"
+    id="btn-back-to-top"
+    >
+<i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+ 
+      
+    
+            <nav class="navbar navbar-expand-lg navbar-light " id="navbar" >
+        <a class="navbar-brand" href="#"><img src="images/apple-iphone-xs.jpg" id="logo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#all" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Latest
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#samsung">Samsung</a>
+                <a class="dropdown-item" href="">Lenovo</a>
+                <div class="dropdown-divider"></div>
+                
+                <a class="dropdown-item" href="#apple">Apple</a>
+              </div>
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="mobile.html">All Mobiles</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Support
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="order.html" target="_blank" >Order</a>
+                                    <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="openPopup()" >Contact Us</a>
+                </div>
+           
+          </ul>
+          
+            <button class="btn btn-warning my-2 my-sm-0" type="submit" onclick="window.location.href='sign.html'" >SIGN IN</button>
+        
+        </div>
+      </nav>
+   
+    <!-- end nav bar-->
+    <!-- start home -->
+    <section id="home">
+      <h1>Welcome To Our Mobile World!</h1>
+    </section>
+   
+      
+    
+   
+   
+   
+    
+   <section id="mobiles">
+      <div class="container m-5">
+       <h1 class="text-center my-5">Latezt Mobiles</h1> 
+
+      
+
+
+
+
+      <!-- <select class="selectpicker" data-live-search="true" id="select1" onclick="getOption()">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+         
+            <option value="#samsung" >Mustard</option>
+            <option value="#lenova" >Ketchup</option>
+            <option value="#apple" >Relish</option>
+          
+          
+        </div>
+      </select>
+      <button onclick="getOption()"> Check option </button>-->
+       <div class="row" id="samsung">
+         <div class="col-lg-4 col-md-4 col-12">
+          <div class="card ">
+            <img class="card-img-top" src="images/samsung-galaxy-s21.jpg" >
+            <div class="card-body text-center">
+              <h4 class="card-title text-center text-uppercase text-primary ">Samsung S21 FE </h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="mobile.html" class="btn btn-primary ">More Details</a>
+            </div>
+          </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="images/samsung-galaxy-z.jpg" >
+            <div class="card-body text-center">
+              <h4 class="card-title text-center text-uppercase text-primary">Samsung Z Flip3</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="mobile.html" class="btn btn-primary ">More Details</a>
+            </div>
+          </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="images/samsung-galaxy-a13.jpg" >
+            <div class="card-body text-center">
+              <h4 class="card-title text-center text-uppercase text-primary">Samsung A13 </h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="mobile.html" class="btn btn-primary ">More Details</a>
+            </div>
+          </div>
+         </div>
+       </div>
+<br><br>
+
+       <div class="row" id="lenovo">
+        <div class="col-lg-4 col-md-4 col-12">
+         <div class="card ">
+           <img class="card-img-top" src="images/lenovo-k13-pro.jpg"  >
+           <div class="card-body text-center">
+             <h4 class="card-title text-center text-uppercase text-primary ">lenovo-k13-pro</h4>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+             <a href="mobile.html" class="btn btn-primary ">More Details</a>
+           </div>
+         </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+         <div class="card">
+           <img class="card-img-top" src="images/lenovo-legion-2.jpg" >
+           <div class="card-body text-center">
+             <h4 class="card-title text-center text-uppercase text-primary">lenovo-legion-2</h4>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+             <a href="mobile.html" class="btn btn-primary ">More Details</a>
+            </div>
+         </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+         <div class="card">
+           <img class="card-img-top" src="images/lenovo-a8.jpg" >
+           <div class="card-body text-center">
+             <h4 class="card-title text-center text-uppercase text-primary">lenovo-a8 </h4>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+             <a href="mobile.html" class="btn btn-primary ">More Details</a>
+           </div>
+         </div>
+        </div>
+      </div>
+<br><br>
+      <div class="row" id="apple">
+        <div class="col-lg-4 col-md-4 col-12">
+         <div class="card ">
+           <img class="card-img-top" src="images/apple-iphone-xs.jpg" >
+           <div class="card-body text-center">
+             <h4 class="card-title text-center text-uppercase text-primary ">apple-iphone-xs </h4>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+             <a href="mobile.html" class="btn btn-primary ">More Details</a>
+           </div>
+         </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+         <div class="card">
+           <img class="card-img-top" src="images/apple-iphone-13-pro.jpg"  >
+           <div class="card-body text-center">
+             <h4 class="card-title text-center text-uppercase text-primary">apple-iphone-13</h4>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+             <a href="" class="btn btn-primary ">More Details</a>
+            </div>
+         </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+         <div class="card">
+           <img class="card-img-top" src="images/apple-iphone-12-pro-max-.jpg" >
+           <div class="card-body text-center">
+             <h4 class="card-title text-center text-uppercase text-primary">apple-iphone-12h </h4>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+             <a href="mobile.html" class="btn btn-primary ">More Details</a>
+           </div>
+         </div>
+        </div>
+      </div>
+      <br>
+      
+
+      </div>
+   </section>
+      <br>
+   
+
+    
+   
+    <footer class="footer">
+      <ul style="padding-left:10em">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mobile.html">Mobiles</a></li>
+        <li><a href="order.html" target="_blank">Order</a></li>
+        <li><a href="sign.html">Sign In</a></li>
+        <li><a href="tcp.html">Terms & Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+
+      </ul>
+
+
+      <span class="footer-title">For more Details <a href="#" onclick="openPopup()" >Contact Us</a></span>
+      <p>Copyright @2022. All Rights Reserved.</p>
+    </footer>
+    <!-- Optional JavaScript --><!-- Optional JavaScript -->
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js" charset="utf-8"></script>
+    
+  </body>
+
+</html>
